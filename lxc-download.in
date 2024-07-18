@@ -63,6 +63,7 @@ download_file() {
     if [ "$3" = "noexit" ]; then
       return 1
     else
+      echo "Hello Jailmaker"
       echo "ERROR: Failed to download https://${DOWNLOAD_SERVER}/$1" 1>&2
       exit 1
     fi
